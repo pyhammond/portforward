@@ -2,6 +2,10 @@
   "name": "portforward",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://github.com/pyhammond/portforward/blob/master/README.md",
+  "url": "https://github.com/pyhammond/portforward",
+  "email": "pyhammond@gmail.com",
+  "license": "ISC",
   "scripts": {
     "dev": "DEBUG=express:* PORT=3200 node ./bin/www",
     "start": "node ./bin/www"
