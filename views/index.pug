@@ -1,0 +1,40 @@
+extends layout
+
+block content
+	h1= name
+	form(method="post")
+
+		div.outside
+			h2 Outside Port
+			input(type="number" name="dst_port" id="dst_port" value=dst_port size="5" required)
+			|  
+			span.small
+				a(href="#" onclick="document.getElementById('dst_port').value='25565'") &lt;- 25565
+
+		div.inside
+			h2 Inside IP : Port
+			input(type="text" name="fwd" id="fwd" value=fwd size="9" minlength="7" maxlength="15" pattern="^((\\d{1,2}|1\\d\\d|2[0-4]\\d|25[0-5])\\.){3}(\\d{1,2}|1\\d\\d|2[0-4]\\d|25[0-5])$" required autofocus)
+			b  : 
+			input(type="number" name="fwd_port" id="fwd_port" value=fwd_port size="5" required)
+			|  
+			span.small
+				a(href="#" onclick="document.getElementById('fwd_port').value='25565'") &lt;- 25565
+			div.small(style="margin-top: 6px")
+				| Quick Pick: 
+				a(href="#" onclick="document.getElementById('fwd').value='10.0.0.8'") [10.0.0.8]
+				|  / 
+				a(href="#" onclick="document.getElementById('fwd').value='10.0.0.155'") [10.0.0.155]
+
+		div.submit
+			input(type="submit" value="Update Port")
+
+		input(type="hidden" name="_id" value=_id)
+		input(type="hidden" name="log" value=log?1:0)
+		input(type="hidden" name="enabled" value=enabled?1:0)
+		input(type="hidden" name="proto" value=proto)
+		input(type="hidden" name="src" value=src)
+		input(type="hidden" name="name" value=name)
+		input(type="hidden" name="site_id" value=site_id)
+
+		if saved
+			p.saved Your Changes Were Saved !

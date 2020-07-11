@@ -1,0 +1,19 @@
+{
+  "name": "portforward",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "DEBUG=express:* PORT=3200 node ./bin/www",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "needle": "^2.5.0",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "debug": "~2.6.9",
+    "morgan": "~1.9.1"
+  }
+}
