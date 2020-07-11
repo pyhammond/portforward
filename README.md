@@ -3,14 +3,14 @@ This is a simple node/express app that lets my son change the port forwarding ru
 
 It uses a hidden REST api that I reverse-engineered to talk to our **Ubiquiti Unifi Security Gateway** and change the forwarded port.
 
-# Install
+## Install
 Assuming you actually have a **Ubiquiti Unifi Security Gateway**, simply copy the `config.dist.js` to a file called `config.js` at the top-level of the app, and edit it to include your login username / password for your ubiquiti interface with the proper server name / port.
 
 Then, just run `npm install` to get all of your libraries installed properly.
 
 After that, you should be able to launch it using `npm start`.
 
-# FAQ
+## FAQ
 Here are the 2 most common questions and answers:
 1. What URI do I set in the `config.js` file ?
 > The same url that you login to to access your Ubiquiti configuration
