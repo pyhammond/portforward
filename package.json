@@ -13,8 +13,8 @@
   "dependencies": {
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
-    "needle": "^2.5.0",
-    "pug": "^3.0.0"
+    "needle": "^2.6.0",
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "debug": "~2.6.9",

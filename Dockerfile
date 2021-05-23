@@ -1,6 +1,6 @@
 # Dockerfile
 
-FROM node:12.18.2-alpine
+FROM node:12.22-alpine3.12
 RUN mkdir -p /opt/app
 WORKDIR /opt/app
 COPY . /opt/app/

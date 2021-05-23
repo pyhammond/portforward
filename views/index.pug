@@ -5,7 +5,9 @@ block content
 	form(method="post")
 
 		div.outside
-			h2 Outside Port
+			h2 Outside IP : Port
+			input(type="text" value="pyhammond.dynu.com" size="19" readonly)
+			b  : 
 			input(type="number" name="dst_port" id="dst_port" value=dst_port size="5" required)
 			|  
 			span.small
