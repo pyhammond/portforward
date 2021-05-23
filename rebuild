@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd "$(dirname "$0")"
+docker build -t portforward .
+docker run -d -p3000:3000 --restart unless-stopped --name portforward portforward
